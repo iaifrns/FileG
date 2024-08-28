@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-text {
+  @apply font-semibold hover:text-primary cursor-pointer hover:underline transition-transform duration-300 transform hover:scale-90 
+}
