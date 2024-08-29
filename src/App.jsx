@@ -3,6 +3,7 @@ import Mainpage from "./pages/Mainpage";
 import JoinFilesToOne from "./pages/JoinFilesToOne";
 import FilterColumns from "./pages/FilterColumns";
 import DivideAFile from "./pages/DivideAFile";
+import SubFiles from "./pages/SubFiles";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/join_file_to_one" element={<JoinFilesToOne/>}/>
         <Route path="/filter_columns" element={<FilterColumns/>}/>
         <Route path="/divide_a_file" element={<DivideAFile/>}/>
+        <Route path="/make_sub_files" element={<SubFiles/>}/>
       </Routes>
     </BrowserRouter>
   );

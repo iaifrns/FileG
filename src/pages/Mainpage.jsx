@@ -41,33 +41,39 @@ const Mainpage = () => {
         <div className="flex flex-col gap-2">
           <p className="font-semibold">Menu Section</p>
           <div className="grid grid-cols-2 gap-2 w-full">
-            <div className="flex flex-col gap-2">
-              <SmallMenuBox
-                icon={"noto-v1:card-index-dividers"}
-                title={
-                  "Extraire et Conserver Certaines Colonnes d’un Fichier CSV"
-                }
-                desc={
-                  "prendre un fichier CSV existant et de ne garder que certaines colonnes spécifiques, éliminant ainsi les informations superflues pour se concentrer sur les données pertinentes."
-                }
-                onClick={() => navigate("filter_columns")}
-              />
-              <SmallMenuBox
-                icon={"twemoji:card-index-dividers"}
-                title={"Diviser un Fichier CSV en Plusieurs Parties"}
-                desc={
-                  "une action de découpage d'un fichier CSV en plusieurs fichiers distincts."
-                }
-                onClick={() => navigate("divide_a_file")}
-              />
-            </div>
-            <BigMenuBox
+            <SmallMenuBox
+              icon={"noto-v1:card-index-dividers"}
+              title={
+                "Extraire et Conserver Certaines Colonnes d’un Fichier CSV"
+              }
+              desc={
+                "prendre un fichier CSV existant et de ne garder que certaines colonnes spécifiques, éliminant ainsi les informations superflues pour se concentrer sur les données pertinentes."
+              }
+              onClick={() => navigate("filter_columns")}
+            />
+            <SmallMenuBox
+              icon={"twemoji:card-index-dividers"}
+              title={"Diviser un Fichier CSV en Plusieurs Parties"}
+              desc={
+                "une action de découpage d'un fichier CSV en plusieurs fichiers distincts."
+              }
+              onClick={() => navigate("divide_a_file")}
+            />
+            <SmallMenuBox
               icon={"emojione:card-index-dividers"}
               title={"Fusionner des Fichiers CSV en un Seul"}
               desc={
                 "une opération où plusieurs fichiers CSV sont combinés en un seul fichier. L'objectif est de rassembler les données dispersées dans différents fichiers pour une analyse ou un traitement centralisé."
               }
               onClick={() => navigate("join_file_to_one")}
+            />
+            <SmallMenuBox
+              icon={"emojione-v1:card-index-dividers"}
+              title={"Diviser un Fichier CSV en sou ficher"}
+              desc={
+                " L'objectif est de rassembler les données dispersées dans différents fichiers pour une analyse ou un traitement centralisé."
+              }
+              onClick={() => navigate("make_sub_files")}
             />
           </div>
         </div>
