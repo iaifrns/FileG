@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "../layout/Layout";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { SubmitButton } from "../components/button";
+import { divideFileToSubFile } from "../helper/divideFileToSubFiles";
 
 const SubFiles = () => {
   const [colName, setColName] = useState("");
@@ -43,7 +44,7 @@ const SubFiles = () => {
     setError({file: fileE, cols: textE})
     
     if(!fileE && !textE) {
-        console.log("it is here")
+        divideFileToSubFile(file, cols)
     }
   }
 
