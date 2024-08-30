@@ -28,9 +28,10 @@ const fileDifferentData = (rows, cols, size) => {
   let colIndex = 0;
   for (let i = 1; i < rows.length; i++) {
     if (!data[cols[colIndex]]) {
-      data[cols[colIndex]] = [rows[0]];
+      data[cols[colIndex]] = [[rows[0]]];
     }
-    data[cols[colIndex]].push(rows[i]);
+    console.log(typeof([rows[i]]))
+    data[cols[colIndex]].push([rows[i]]);
     if (i % size == 0) colIndex++;
   }
 
