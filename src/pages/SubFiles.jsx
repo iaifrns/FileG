@@ -45,6 +45,9 @@ const SubFiles = () => {
     
     if(!fileE && !textE) {
         divideFileToSubFile(file, cols)
+        setFile(undefined)
+        setCols([])
+        setColName("")
     }
   }
 
